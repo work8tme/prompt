@@ -1,0 +1,36 @@
+# 组件生成
+
+When I use composer to generate files, try to follow my coding conventions when generating code, especially when generating components. The format should be: folder names in uppercase, containing a component with uppercase naming and an entry file index.ts. The index file should have a default export of the component.
+
+For example, the structure would be like:
+
+Button/
+  ├── Button.tsx
+  └── index.ts
+
+
+Where Button.tsx would contain:
+```tsx
+import React, { useState, useEffect } from 'react'
+
+const Button: React.FC = () => {
+  return (
+    <div>
+      content
+    </div>
+  )
+}
+
+export default Button
+
+```
+
+Where index.ts would contain:
+
+```ts
+import Button from './Button'
+
+export default Button
+```
+
+create it for me
