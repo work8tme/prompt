@@ -33,4 +33,4 @@ import Button from './Button'
 export default Button
 ```
 
-create it for me
+create it for me in the specified position
